@@ -1,0 +1,25 @@
+#goTop {
+    width: 58px;
+    height: 58px;
+    position: fixed;
+    z-index: 4;
+    right: 20px;
+    bottom: -100px;
+    transition:  all 0.3s;
+    &.on {
+        bottom: 20px;
+    }
+    .container {
+        width: 100%;
+        .content {
+            width: 100%;
+            a {
+                width: 100%;
+                display: block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

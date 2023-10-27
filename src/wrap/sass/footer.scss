@@ -1,0 +1,172 @@
+#footer {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    .row {
+        width: 100%;
+        .container {
+            width: 1050px;
+            margin: 0 auto;
+            .content {
+
+            }
+        }
+        &.row1 {
+            border-top: 1px solid #f9f9f9;
+            .container {
+                .content {
+                    padding: 30px 0;
+                    display: flex;
+                    .left-box {
+                        width: 50%;
+                        color: #333;
+                        h3 {
+                            padding-bottom: 30px;
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                        h2 {
+                            padding-bottom: 25px;
+                            color: #333;
+                            a {
+                                font-family: 'Noto Sans';
+                                margin-right: 5px;
+                                font-size: 28px;
+                            }
+                            em {
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+                        }
+                        > div { // 화살표 없으면 거리 멀어짐
+                            width: 100%;
+                            ul {
+                                li {
+                                    width: 100%;
+                                    display: flex;
+                                    .left {
+                                        a {
+                                            border: #e2e2e2 solid 1px;
+                                            border-radius: 3px;
+                                            width: 140px;
+                                            height: 40px;
+                                            display: flex;//넓이 잡아 줌
+                                            justify-content: center;
+                                            align-items: center;
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            margin: 0 16px 16px 0;
+                                        }
+                                    }
+                                    .right {
+                                        font-size: 14px;
+                                        color: #999;
+                                        line-height: 110%;
+                                        i {
+                                            padding: 0 5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        p {
+                            font-size: 12px;
+                            color: #999;
+                            a {
+                                font-size: 12px;
+                                color: #999;
+                            }
+                        }
+                    }
+                    .right-box {
+                        width: 50%;
+                        ul {
+                            width: 100%;
+                            li {
+                                width: 100%;
+                                &:nth-child(1) {
+                                    a {
+                                        font-size: 14px;
+                                        padding-right: 10px;
+                                        font-weight: 500;
+                                    }
+                                }
+                                &:nth-child(2) {
+                                    color: #999;
+                                    font-size: 12px;
+                                    margin: 30px 0 40px 0;
+                                    line-height: 150%;
+                                    a {
+                                        color: #5f0080;
+                                    }
+                                    i {
+                                        padding: 0 5px;
+                                    }
+                                }
+                                &:nth-child(3) {
+                                    a {
+                                        display: inline-block;
+                                        margin-right: 10px;
+                                        width: 30px;
+                                        height: 30px;
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.row2 {
+            width: 100%;
+            .container {
+                border-top: 1px solid #eeeeee;
+                .content {
+                    padding: 26px 0 33px 0;
+                    ul {
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        li {
+                            display: inline-flex;
+                            .icon-box {
+                                margin-right: 10px;
+                            }
+                            .text-box {
+                                font-size: 10px;
+                                color: #999;
+                                line-height: 140%;
+                                font-family: 'Roboto';
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.row3 {
+            width: 100%;
+            background: #f7f7f7;
+            .container {
+                .content {
+                    padding: 20px 0 30px 0;
+                    text-align: center;
+                    p {
+                        font-size: 10px;
+                        color: #999;
+
+                        font-family: 'Roboto';
+                        &:nth-child(1) {
+                            line-height: 150%;
+                        }
+                        &:nth-child(2) {
+                            line-height: 320%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

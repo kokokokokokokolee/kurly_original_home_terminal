@@ -1,0 +1,189 @@
+#addressSearch {
+    user-select: none;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    .container {
+        width: 530px;
+        height: 569px;
+        background: #fff;
+        padding: 0 30px;
+        overflow-y: auto;
+        position: relative;
+        > button {
+            z-index: 1;;
+            position: absolute;
+            top: 2px;
+            right: 0;
+            width: 24px;
+            height: 24px;
+            font-size: 20px; 
+            background: transparent;
+            border: 0;
+            color: #fff;
+        }
+        &::before {
+            content:'';
+            position: absolute;
+            top: 0;
+            left: 0 ;
+            width: 100%;
+            background: #5f0080;
+            height: 27px;
+            opacity: 0.3;
+        }
+        .title {
+            position: relative;
+            z-index: 1;
+            padding: 60px 0 34px 0;
+            text-align: center;
+            h2 {
+                font-size: 24px;
+                font-weight: 600;
+                padding-bottom: 13px;
+                strong {
+                    color: #5f0080;
+                }
+                span  {
+                    color: #333;
+                    padding-left: 10px;
+                }
+            }
+            h3 {
+                color: #666;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            ul {
+                width: 100%;
+                li {
+                    width: 100%;
+                    div {
+                        input {
+                            width: 100%;
+                            height: 42px;
+                            border: 1px solid #ddd;
+                            padding: 0 10px;
+                            border-radius: 3px;
+                            
+                            &::placeholder {
+                                color: #ddd;
+                            }
+                        }
+                        &.input-box1 {
+                            padding-right: 130px;
+                            position: relative;
+                            input {
+                                background:#fafafa;
+                                outline: none;
+                                color: #999;
+                                
+                                &::placeholder {
+                                    color: #999;
+                                }
+                            }
+                            button {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                height: 42px;
+                                width: 120px;
+                                border: #5f0080 solid 1px;
+                                border-radius: 3px;
+                                color: #5f0080;
+                                background-color: #fff;
+                                font-weight: 600;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                img {
+                                    width: 24px;
+                                    height: 24px;
+                                }
+                            }
+                        }
+                        &.input-box2 {
+                            padding: 10px 0;
+                            input {
+                            outline-offset: -1px;
+                            outline:1px solid transparent;
+                            &:focus {
+                                outline-color: #000;
+                            }
+                            }
+                        }
+                    }
+                    &.p1 {
+                        color: #999;
+                        font-size: 11px;
+                        padding-bottom: 15px;
+                    }
+                    button {
+                        width: 100%;
+                        height: 42px;
+                        border: 0;
+                        border-radius: 3px;
+                        background-color: #5f0080;
+                        color: #fff;
+                    }
+                    .not-delivery {
+                        padding: 30px 0 10px 0;
+                        font-size: 13px;
+                        .p2 {
+                            display: flex;
+                            color: #f03f40;
+                            img {
+                                width: 14px;
+                                height: 14px;
+                                margin-right: 5px;
+                            }
+                        }
+                        .p3 {
+                            padding: 8px 0 0 20px;
+                            color: #555;
+                            display: flex;
+                            justify-content: space-between;
+                            span {
+                                font-size: 12px;
+                                color: #999;
+                                img {
+                                    width: 11px;
+                                    height: 10px;
+                                    margin-left: 5px;
+                                }
+                                &.bottom {
+                                    transition: all 0.3s;
+                                    img {
+                                        transform: rotate(180deg);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .list {
+                    ul {
+                        padding: 10px 0 0 11px;
+                        li {
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: #999;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
